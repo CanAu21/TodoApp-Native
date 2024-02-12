@@ -13,10 +13,13 @@ import {
   useColorScheme,
   View,
 } from 'react-native';
+import Header from './src/components/header';
+import generalStyles from './src/utils/generalStyles';
 
 function App() {
   return (
-    <SafeAreaView>
+    <SafeAreaView style={generalStyles.flex1}>
+      <Header title="My Todo App" />
       <View>
         <Text>Todo App week1</Text>
       </View>
@@ -24,7 +27,6 @@ function App() {
   );
 }
 
-const styles = StyleSheet.create({
-});
+const styles = StyleSheet.create({});
 
 export default App;
