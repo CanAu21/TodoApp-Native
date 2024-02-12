@@ -14,26 +14,17 @@ import {
   View,
 } from 'react-native';
 
-
-
-
-
-
 function App() {
-
-
   return (
     <SafeAreaView>
       <View>
-        <Text>Todo App</Text>
+        <Text>Todo App week1</Text>
       </View>
-    
     </SafeAreaView>
   );
 }
 
 const styles = StyleSheet.create({
- 
 });
 
 export default App;
