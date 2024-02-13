@@ -41,7 +41,7 @@ function App() {
       <Header title="My Todo App" />
       <Input
         onIconPress={() => Alert.alert('İcona tıkladın')}
-        placeholder="deneme"
+        placeholder="ToDo"
         hasIcon
         value={text}
         onChangeText={text => setText(text)}
