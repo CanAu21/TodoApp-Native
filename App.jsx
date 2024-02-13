@@ -41,7 +41,7 @@ function App() {
       <Header title="My Todo App" />
       <Input
         onIconPress={() => Alert.alert('İcona tıkladın')}
-        placeholder="deneme"
+        placeholder="ToDo"
         hasIcon
         value={text}
         onChangeText={text => setText(text)}
@@ -53,7 +53,12 @@ function App() {
         ) : (
           <ScrollView style={styles.scrollView}>
             {todos?.map(todo => (
-              <Todo key={todo?.id} todo={todo} />
+              <Todo
+                todos={todos}
+                setTodos={setTodos}
+                key={todo?.id}
+                todo={todo}
+              />
             ))}
           </ScrollView>
         )}
